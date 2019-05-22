@@ -1,0 +1,545 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  display: block;
+  z-index: 12;
+  border-bottom: solid 1px lightgray;
+  box-shadow: 0px 5px 12px -2px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 60%;
+  margin-top: 1.5%;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 400%;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#produktboxhållare {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8%;
+  align-content: flex-start;
+}
+
+.produktbox {
+  height: 15%;
+  width: 300px;
+  border: solid 2px lightgray;
+  margin-bottom: 3%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+#imgscrollen {
+  height: 90%;
+  width: 300%;
+  overflow: hidden;
+  display: flex;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#imgs {
+  display: flex;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cowcontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 9;
+}
+
+#cowtext {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 100px;
+  color: white;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+#pcowfont {
+  color: white;
+  font-size: 20px;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+#sheepcontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#chickencontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#scrollbaren {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px lightgray;
+}
+
+#knappbak {
+  width: 30px;
+  height: 30px;
+  display: none;
+  background-color: lightgray;
+  margin-top: 1%;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+#knappfram {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  display: none;
+  margin-top: 1%;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+#sloganartikelhållare {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#h1behållare {
+  height: 20%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 3.5%;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+#artikelbehållare {
+  height: 80%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: flex-end;
+  border-bottom: solid 1px lightgray;
+}
+
+.artiklar {
+  height: 90%;
+  width: 300px;
+  margin: 20px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  border: solid 1px lightgray;
+}
+
+.litenimg {
+  height: 60%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.litentext {
+  padding-top: 5%;
+  height: 30%;
+  width: 85%;
+  display: block;
+  align-self: center;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 17px;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.litenlänkknapp {
+  align-self: center;
+  height: 8%;
+  width: 30%;
+  color: white;
+  background-color: lightgray;
+  display: flex;
+  margin-bottom: 5%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+}
+
+.litenlänk {
+  text-align: center;
+  align-self: center;
+  margin-left: 20px;
+}
+
+#intervjusektion {
+  height: 200%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#övreintervju {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intervjuborderö {
+  width: 90%;
+  height: 90%;
+  border: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+#intervjuimgö {
+  width: 25%;
+  height: 100%;
+}
+
+#intervjutextö {
+  height: 100%;
+  width: 72%;
+  text-align: center;
+  margin-right: 2%;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+h3 {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 40px;
+  margin-bottom: 2%;
+}
+
+#undreintervju {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intervjuborderu {
+  width: 90%;
+  height: 90%;
+  border: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+#intervjutextu {
+  height: 100%;
+  width: 72%;
+  text-align: center;
+  margin-right: 2%;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+#intervjuimgu {
+  width: 25%;
+  height: 100%;
+}
+
+footer {
+  height: 35%;
+  width: 100%;
+  background-color: white;
+  border-top: solid 1px lightgray;
+}
+
+#footertext {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerbehållare {
+  width: 100%;
+  height: 33%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footerFont {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: 100%;
+    height: 500%;
+  }
+
+  #sloganartikelhållare {
+    height: 200%;
+    overflow: hidden;
+  }
+
+  #h1behållare {
+    height: 10%;
+  }
+
+  #artikelbehållare {
+    height: 80%;
+  }
+
+  .artiklar {
+    height: 42%;
+    width: 300px;
+  }
+
+  #intervjusektion {
+    height: 200%;
+  }
+
+  #övreintervju {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #intervjuimgö {
+    width: 30%;
+    height: 100%;
+  }
+
+  #intervjutextö {
+    height: 100%;
+    width: 72%;
+  }
+
+  #undreintervju {
+    height: 50%;
+    width: 100%;
+  }
+
+  #intervjuimgu {
+    width: 30%;
+    height: 100%;
+  }
+
+  nav {
+    width: 100%;
+    height: 60px;
+  }
+
+  ul {
+    width: 70%;
+    margin-left: 30%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+    height: 600%;
+  }
+
+  #sloganartikelhållare {
+    height: 300%;
+    overflow: hidden;
+  }
+
+  #h1behållare {
+    height: 10%;
+  }
+
+  #artikelbehållare {
+    height: 80%;
+  }
+
+  .artiklar {
+    height: 30%;
+    width: 300px;
+  }
+
+  #intervjusektion {
+    height: 200%;
+  }
+
+  #övreintervju {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #intervjuimgö {
+    width: 30%;
+    height: 100%;
+  }
+
+  #intervjutextö {
+    height: 100%;
+    width: 72%;
+  }
+
+  #intervjuborderö {
+  overflow: hidden;
+  }
+
+  #undreintervju {
+    height: 60%;
+    width: 100%;
+  }
+
+  #intervjuimgu {
+    width: 30%;
+    height: 100%;
+  }
+
+  nav {
+    width: 100%;
+    height: 60px;
+  }
+
+  ul {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
