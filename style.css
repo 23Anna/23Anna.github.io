@@ -90,6 +90,17 @@ a {
   font-size: 14px;
 }
 
+#logo{
+  font-family: 'Petit Formal Script', cursive;
+  font-size:15px;
+  margin-left: 2%;
+  display: block;
+  width: 5%;
+  height: 20%;
+  margin-top: 1%;
+  position:fixed;
+}
+
 main {
   display: flex;
   width: 100%;
